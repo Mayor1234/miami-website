@@ -21,7 +21,7 @@ const Service = () => {
             <div className="flex items-center h-full">
               <div className="p-5 md:p-10">
                 <div>
-                  <h2 className="text-3xl font-semibold leading-tight py-2 text-gray-800">
+                  <h2 className="text-3xl font-semibold leading-tight py-2 text-gray-700">
                     Miami Automechanic
                   </h2>
                   <h3 className="text-xl text-[#3673ac]  pb-8">
@@ -57,8 +57,8 @@ const Service = () => {
                 </div>
                 <div className="mt-8">
                   <Link
-                    href="#"
-                    className="px-10 py-3 border-1 border-[#3673ac] text-[#3673ac] leading-relaxed transition-all delay-100 rounded-sm ease-in-out hover:bg-[#3673ac] hover:text-[#fff]"
+                    href="/about"
+                    className="py-3 inline-block  px-10 leading-relaxed transition-all delay-100 rounded-sm ease-in-out bg-[#3673ac] text-[#fff] border-1 border-transparent hover:border-[#3673ac] hover:text-[#3673ac] hover:bg-[#fff]"
                   >
                     Read more
                   </Link>

@@ -8,11 +8,11 @@ const Testimonial = () => {
   return (
     <div className="max-w-5xl mx-auto px-5 md:px-0 md:pt-8">
       <div>
-        <h2 className="font-bold text-2xl text-center  tracking-wide">
+        <h2 className="font-bold text-2xl text-gray-700 text-center tracking-wide pt-4 md:pt-0">
           Our Customers Are Happy
         </h2>
       </div>
-      <div className="w-full py-5 mb-8 mt-8 md:flex mx-auto gap-8 ">
+      <div className="w-full md:py-5 mb-8 mt-8 md:flex mx-auto gap-8 ">
         <div className="mb-4 lg:mb-0  shadow-sm shadow-slate-400 flex overflow-hidden bg-slate-50 p-8 hover:shadow-lg hover:cursor-pointer ">
           <div>
             <Image

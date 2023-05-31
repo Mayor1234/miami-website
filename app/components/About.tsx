@@ -14,9 +14,9 @@ const About = () => {
             <div className="p-10 md:p-10 ">
               <ul className=" flex items-center flex-col gap-6">
                 <li className="relative shadow-md p-4 rounded-sm">
-                  <BanknotesIcon className="text-sm h-10 absolute -top-2 -left-4 border-1 border-gray-400 p-2 rounded-full" />
+                  <BanknotesIcon className="text-sm h-10 absolute -top-2 -left-4 text-[#3673ac] border-1 border-[#3673ac] p-2 rounded-full" />
                   <div className="p-4">
-                    <span className="text-lg font-semibold leading-tight pb-4 inline-block">
+                    <span className="text-lg font-semibold leading-tight pb-4 inline-block text-[#3673ac]">
                       Affordable Price
                     </span>
                     <p className="text-base text-gray-600">
@@ -26,10 +26,10 @@ const About = () => {
                   </div>
                 </li>
                 <li className="relative shadow-md p-4 rounded-sm">
-                  <WrenchScrewdriverIcon className="text-sm h-10 absolute -top-2 -left-4 border-1 border-gray-400 p-2 rounded-full" />
+                  <WrenchScrewdriverIcon className="text-sm h-10 absolute -top-2 text-[#3673ac] -left-4 border-1 border-[#3673ac] p-2  rounded-full" />
 
                   <div className="p-4">
-                    <span className="text-lg font-semibold leading-tight pb-4 inline-block">
+                    <span className="text-lg font-semibold leading-tight pb-4 inline-block text-[#3673ac]">
                       Sophisticated Equiptments
                     </span>
                     <p className="text-base text-gray-600">
@@ -40,9 +40,9 @@ const About = () => {
                   </div>
                 </li>
                 <li className="relative shadow-md p-4 rounded-sm">
-                  <UsersIcon className="text-sm h-10 absolute -top-2 -left-4 border-1 border-gray-400  p-2 rounded-full" />
+                  <UsersIcon className="text-sm h-10 absolute -top-2 -left-4 text-[#3673ac] border-1 border-[#3673ac]  p-2 rounded-full" />
                   <div className="p-4">
-                    <span className="text-lg font-semibold leading-tight pb-4 inline-block">
+                    <span className="text-lg font-semibold leading-tight pb-4 inline-block text-[#3673ac]">
                       Professional Standards
                     </span>
                     <p className="text-base text-gray-600">

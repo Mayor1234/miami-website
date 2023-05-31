@@ -1,3 +1,4 @@
+import Brands from '@/app/components/Brands';
 import MenuHeader from '@/app/components/MenuHeader';
 import React from 'react';
 
@@ -6,6 +7,7 @@ const page = () => {
   return (
     <div>
       <MenuHeader title={title} />
+      <Brands />
     </div>
   );
 };

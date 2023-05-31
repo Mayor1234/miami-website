@@ -2,6 +2,7 @@ import MenuHeader from '@/app/components/MenuHeader';
 import ceo from '../../../public/images/ceo.jpg';
 import Image from 'next/image';
 import Testimonial from '@/app/components/Testimonial';
+import Link from 'next/link';
 
 const page = () => {
   const title = 'About';
@@ -12,8 +13,10 @@ const page = () => {
       <div className="max-w-5xl mx-auto md:h-[600px] flex flex-col-reverse gap-8 my-8 md:flex-row md:gap-0 bg-slate-50">
         <div className="w-full md:w-[55%] md:p-0 flex items-center h-full">
           <div className="p-8">
-            <h2 className="text-2xl font-semibold pb-2">About Us</h2>
-            <p className="max-w-lg text-sm text-gray-600 leading-loose">
+            <h2 className="text-2xl font-semibold pb-2 text-gray-700">
+              About Us
+            </h2>
+            <p className="max-w-lg text-sm text-gray-600 leading-loose pb-8">
               Miami Automechanic was established to deliver a global standard
               automobile diagnosis and repair. We are a dedicated team of
               experienced mechanics who are passionate about keeping your
@@ -31,6 +34,11 @@ const page = () => {
               choice in the area. Contact us today or visit our location to
               experience the difference in auto repair expertise.
             </p>
+            <Link href="/contact">
+              <span className="py-3 inline-block  px-10 leading-relaxed transition-all delay-100 rounded-sm ease-in-out bg-[#3673ac] text-[#fff] border-1 border-transparent hover:border-[#3673ac] hover:text-[#3673ac] hover:bg-[#fff]">
+                Contact Us
+              </span>
+            </Link>
           </div>
         </div>
         <div className="w-full p-5  md:w-[45%] md:p-0">
