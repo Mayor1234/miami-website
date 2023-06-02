@@ -5,6 +5,7 @@ import {
   EyeIcon,
   ChatBubbleLeftIcon,
 } from '@heroicons/react/24/outline';
+import Link from 'next/link';
 
 const RecentPosts = ({ ...recentPost }) => {
   return (
@@ -22,7 +23,9 @@ const RecentPosts = ({ ...recentPost }) => {
         <div className="p-4">
           <div className="h-12 overflow-hidden">
             <h2 className="cursor-pointer hover:text-[#1890ff]">
-              {recentPost.title}
+              <Link href={`/blog/post/${recentPost.slug.current}`}>
+                {recentPost.title}
+              </Link>
             </h2>
           </div>
           <div className="border-t-1  border-gray-300 mt-4 ">

@@ -19,7 +19,7 @@ const Header = () => {
           </div>
         </Link>
         <div>
-          <ul className="hidden lg:inline-flex gap-8 uppercase text-sm font-semibold">
+          <ul className="hidden lg:inline-flex gap-8 uppercase text-sm text-gray-900 font-semibold">
             <Link href="/">
               <li className="">Home</li>
             </Link>

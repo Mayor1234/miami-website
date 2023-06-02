@@ -10,7 +10,7 @@ import nissan from '../../public/icons/nissan_miami.png';
 
 const Brands = () => {
   return (
-    <div className="max-w-5xl mx-auto bg-[#f7f8f9] py-8 md:px-8">
+    <div className="max-w-5xl mx-auto  py-8 ">
       <div>
         <h2 className="font-bold text-2xl text-center pb-12 tracking-wide text-gray-700">
           Featured Brands

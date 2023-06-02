@@ -20,8 +20,9 @@ const About = () => {
                       Affordable Price
                     </span>
                     <p className="text-base text-gray-600">
-                      Most vehicles get completely damaged as a result of high
-                      cost of service maintenance.
+                      We provide detailed, itemized estimates before starting
+                      any repair work. You can trust us to offer fair and
+                      competitive pricing.
                     </p>
                   </div>
                 </li>

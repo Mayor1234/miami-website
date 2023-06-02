@@ -128,7 +128,9 @@ const page = async ({ params: { slug } }: Props) => {
                 <h2 className="text-2xl font-medium leading-tight">
                   Recent Posts
                 </h2>
-                <span>See All </span>
+                <span>
+                  <Link href="/blog">See All</Link>
+                </span>
               </div>
               <div className="flex flex-col w-full  md:flex-row gap-4">
                 {recentPosts.map((recentPost: Post) => (
