@@ -116,7 +116,7 @@ const page = async ({ params: { slug } }: Props) => {
                 />
               </div>
             </div>
-            <section>
+            <section className="text-gray-600">
               <PortableText
                 value={post.body}
                 components={PortableTextComponents}

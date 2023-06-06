@@ -10,7 +10,7 @@ export const PortableTextComponents = {
   types: {
     image: ({ value }: any) => {
       return (
-        <div className="relative w-full h-96 m-10 mx-auto">
+        <div className="relative text-gray-600 w-full h-96 m-10 mx-auto">
           <Image
             className="object-contain w-full"
             src={urlForImage(value).url()}
@@ -52,19 +52,21 @@ export const PortableTextComponents = {
   },
   block: {
     h1: ({ children }: any) => (
-      <h1 className="text-5xl py-10 font-bold">{children}</h1>
+      <h1 className="text-5xl py-10 text-gray-700 font-bold">{children}</h1>
     ),
     h2: ({ children }: any) => (
-      <h1 className="text-4xl py-10 font-bold">{children}</h1>
+      <h1 className="text-4xl py-10 text-gray-700 font-bold">{children}</h1>
     ),
     h3: ({ children }: any) => (
-      <h1 className="text-3xl pt-10 pb-6 font-bold">{children}</h1>
+      <h1 className="text-3xl pt-10 text-gray-700 pb-6 font-bold">
+        {children}
+      </h1>
     ),
     h4: ({ children }: any) => (
-      <h1 className="text-4l py-10 font-bold">{children}</h1>
+      <h1 className="text-4l py-10 text-gray-600 font-bold">{children}</h1>
     ),
     blockquote: ({ children }: any) => (
-      <blockquote className="border-l-[#1890ff] border-l-4 py-4 px-4 my-5 ">
+      <blockquote className="border-l-[#1890ff] border-l-4 text-gray-600 py-4 px-4 my-5 ">
         {children}
       </blockquote>
     ),

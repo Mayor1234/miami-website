@@ -1,6 +1,5 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import display from '../../public/images/miami4.jpg';
+
 import Header from './Header';
 
 const MenuHeader = ({ title }: { title: string }) => {

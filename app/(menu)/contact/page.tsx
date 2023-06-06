@@ -106,7 +106,7 @@ const Page = () => {
             </form>
           </div>
         </div>
-        <div className="w-full  text-gray-700 md:w-[50%]  bg-[#dedfe0] flex justify-center items-center">
+        <div className="w-full  text-gray-700 md:w-[50%]  bg-slate-200 flex justify-center items-center">
           <div className="p-8">
             <h3 className="text-3xl font-semibold tracking-normal pb-2">
               Get In Touch

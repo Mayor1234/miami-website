@@ -12,7 +12,7 @@ const page = () => {
           <h2 className="text-2xl font-bold pb-8 text-center tracking-wide text-gray-700">
             Our Services
           </h2>
-          <p className="px-5 md:px-0">
+          <p className="px-5 text-gray-600 md:px-0">
             We are a team of highly skilled and experienced technicians
             dedicated to providing exceptional automotive repair and maintenance
             services. Whether you need routine maintenance, major repairs, or

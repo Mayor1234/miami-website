@@ -19,7 +19,7 @@ export default function Home() {
       <div className="max-w-7xl mx-auto py-10">
         <About />
       </div>
-      <div className="mx-auto py-20">
+      <div className="mx-auto py-10">
         <Brands />
       </div>
       <Testimonial />

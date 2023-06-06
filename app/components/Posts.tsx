@@ -9,17 +9,11 @@ type Props = {
   posts: Post[];
 };
 
-// interface mainImage {
-//   _type: 'image';
-//   asset: Reference;
-// }
-
 export default function Posts({ posts }: Props) {
-  // console.log(posts);
   return (
     <>
       <div className="container mx-auto">
-        <div className="mx-auto max-w-[980px]">
+        <div className="mx-auto max-w-5xl py-8">
           <hr className="hidden md:border-gray-400 mb-10" />
           <div>
             <div className="w-full">
@@ -28,7 +22,7 @@ export default function Posts({ posts }: Props) {
                   key={post._id}
                   className="flex flex-col md:flex-row group mb-6 cursor-pointer border-1 border-gray-300"
                 >
-                  <div className="relative w-full md:w-1/2 h-80 drop-shadow-xl group">
+                  <div className="relative z-10 w-full md:w-1/2 h-80 drop-shadow-xl group">
                     <Image
                       className="p-8 object-cover object-center brightness-75 group-hover:brightness-100 group-hover:scale-101 transistion-transform duration-200 md:p-4 lg:p-0"
                       src={urlForImage(post.mainImage).url()}
@@ -37,7 +31,7 @@ export default function Posts({ posts }: Props) {
                       sizes="(max-width: 768px)"
                     />
                   </div>
-                  <div className=" w-full md:w-1/2 p-10 text-gray-700">
+                  <div className="w-full md:w-1/2 p-10 text-gray-700">
                     <div className="flex items-center pb-4">
                       <div>
                         <Image

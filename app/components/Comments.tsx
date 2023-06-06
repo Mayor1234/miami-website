@@ -38,10 +38,10 @@ const Comments = ({ ...post }) => {
   return (
     <div className="mt-8">
       <div className="border-1 border-gray-300  p-4 md:p-8">
-        <h3 className="text-3xl font-semibold tracking-normal">
+        <h3 className="text-3xl text-gray-700 font-semibold tracking-normal">
           Leave a comment
         </h3>
-        <p className="text-lg text-gray-500 pt-2 -tracking-normal">
+        <p className="text-lg text-slate-600 pt-2 -tracking-normal">
           Your email address will not be published
         </p>
         <form
@@ -56,7 +56,9 @@ const Comments = ({ ...post }) => {
           />
 
           <label className="flex flex-col">
-            <span className="font-semibold text-base py-2">Name</span>
+            <span className="font-semibold text-base py-2 text-gray-700">
+              Name
+            </span>
             <input
               type="name"
               className="text-base placeholder:text-sm border-b-1 border-gray-400 py-2 px-4 outline-none focus-within:shadow-md focus:border-b-1 focus:border-[#1890ff]"
@@ -76,7 +78,9 @@ const Comments = ({ ...post }) => {
             )}
           </label>
           <label className="flex flex-col">
-            <span className="font-semibold text-base py-2">Email</span>
+            <span className="font-semibold text-base py-2 text-gray-700">
+              Email
+            </span>
             <input
               type="email"
               className="text-base placeholder:text-sm border-b-1 border-gray-400 py-2 px-4 outline-none focus-within:shadow-md focus:border-b-1 focus:border-[#1890ff]"
@@ -96,7 +100,9 @@ const Comments = ({ ...post }) => {
             )}
           </label>
           <label className="flex flex-col">
-            <span className="font-semibold text-base py-2">Comment</span>
+            <span className="font-semibold text-base py-2 text-gray-700">
+              Comment
+            </span>
             <textarea
               className="text-base placeholder:text-sm border-b-1  border-gray-400 py-2 px-4 outline-none focus-within:shadow-md focus:border-b-1 focus:border-[#1890ff]"
               placeholder="Enter Comments"
@@ -130,7 +136,7 @@ const Comments = ({ ...post }) => {
                   className="my-4 pb-3 border-b-1 border-gray-300"
                 >
                   <div className="flex items-center  gap-3">
-                    <h3 className="py-1 font-semibold capitalize">
+                    <h3 className="py-1 font-semibold capitalize text-gray-700">
                       {item.name}
                     </h3>
                     <p className="text-gray-400 text-sm ">

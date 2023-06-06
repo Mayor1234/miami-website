@@ -1,26 +1,33 @@
 import Image from 'next/image';
 import logo from '../../public/newlogo.png';
-import {
-  BsFacebook,
-  BsTwitter,
-  BsYoutube,
-  BsLinkedin,
-  BsGithub,
-} from 'react-icons/bs';
+import { BsFacebook, BsTwitter, BsYoutube, BsLinkedin } from 'react-icons/bs';
 import { AiOutlineCopyrightCircle } from 'react-icons/ai';
+import Link from 'next/link';
 
 const year = new Date().getFullYear();
 
 const Footer = () => {
   return (
-    <div className="w-full py-10 text-slate-700 px-4">
-      <div className="max-w-[980px] mx-auto flex flex-col md:flex-row gap-4 justify-center items-center md:justify-between">
+    <div className="w-full py-10 text-slate-700">
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-4 justify-center items-center md:justify-between">
         <div className="flex items-center gap-2">
-          <Image src={logo} width={50} height={50} alt="logo" />
+          <Link href="/">
+            <div className="h-8 w-8 md:h-10 md:w-10">
+              <Image
+                src={logo}
+                width={50}
+                height={50}
+                alt="logo"
+                className="object-cover"
+              />
+            </div>
+          </Link>
           <p className="flex items-center text-sm font-titleFont gap-1">
-            <span className="font-bold text-xl tracking-widest">MA</span> || all
-            rights reserved <AiOutlineCopyrightCircle className="mt-[1px]" />{' '}
-            {year}
+            <span className="font-bold text-lg md:text-xl tracking-widest">
+              MA
+            </span>{' '}
+            || all rights reserved{' '}
+            <AiOutlineCopyrightCircle className="mt-[1px]" /> {year}
           </p>
         </div>
 

@@ -18,16 +18,18 @@ const Testimonial = () => {
             <Image
               src={client1}
               alt="customer"
-              width={200}
-              height={200}
-              className="rounded-full object-cover object-top border border-red-6000 aspect-square"
+              width={300}
+              height={300}
+              className="rounded-full object-cover object-top aspect-square"
             />
           </div>
           <div className="ml-3 overflow-hidden py-3">
-            <blockquote className="relative inline-block text-gray-700 pb-8 before:block  before:absolute before:content-['\201C'] before:text-3xl before:-top-4 before:-left-0 ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              delectus cum numquam sunt magni quis nobis. Illum illo ipsum nam
-              nemo,
+            <blockquote className="relative inline-block  text-gray-700 pb-8 before:block  before:absolute before:content-['\201C'] before:text-3xl before:-top-4 before:-left-0 ">
+              Throughout the entire process, Miami Automechanic demonstrated a
+              commitment to honesty and transparency. They provided a detailed
+              breakdown of the repairs needed and offered practical solutions to
+              fit within my budget. I never felt pressured or coerced into
+              unnecessary services.
             </blockquote>
             <span className="capitalize text-lg text-slate-900">
               Andy keneth
@@ -40,21 +42,23 @@ const Testimonial = () => {
             <Image
               src={client2}
               alt="customer"
-              width={200}
-              height={200}
+              width={300}
+              height={300}
               className="rounded-full object-cover object-top border border-red-6000 aspect-square"
             />
           </div>
           <div className="ml-3 overflow-hidden py-3">
-            <blockquote className="relative inline-block text-gray-700 pb-8 before:block  before:absolute before:content-['\201C'] before:text-3xl before:-top-4 before:-left-0">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              delectus cum numquam sunt magni quis nobis. Illum illo ipsum nam
-              nemo,
+            <blockquote className="relative inline-block text-base text-gray-700 pb-8 before:block  before:absolute before:content-['\201C'] before:text-3xl before:-top-4 before:-left-0">
+              Miami Automehcanic took the time to carefully listen to my
+              concerns and thoroughly inspect my vehicle. Their knowledge and
+              attention to detail were truly impressive. They explained the
+              issues in a clear and concise manner, ensuring I understood the
+              necessary repairs and their associated costs.
             </blockquote>
             <span className="capitalize text-lg text-slate-900">
-              Andy keneth
+              Mrs Mary George
             </span>
-            <h3 className="text-sm text-slate-500">CEO Andy Group</h3>
+            <h3 className="text-sm text-slate-500">TEACHER</h3>
           </div>
         </div>
         <div className="flex shadow-sm shadow-slate-400 overflow-hidden bg-slate-50 p-8 hover:shadow-lg hover:cursor-pointer">
@@ -62,21 +66,24 @@ const Testimonial = () => {
             <Image
               src={client3}
               alt="customer"
-              width={200}
-              height={200}
+              width={300}
+              height={300}
               className="rounded-full object-cover object-top border border-red-6000 aspect-square"
             />
           </div>
           <div className="ml-3 overflow-hidden py-3">
-            <blockquote className="relative inline-block text-gray-700 pb-8 before:block  before:absolute before:content-['\201C'] before:text-3xl before:-top-4 before:-left-0">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              delectus cum numquam sunt magni quis nobis. Illum illo ipsum nam
-              nemo
+            <blockquote className="relative inline-block text-base text-gray-700 pb-8 before:block  before:absolute before:content-['\201C'] before:text-3xl before:-top-4 before:-left-0">
+              Overall, my experience with Miami Automechanic was
+              outstanding.They possess a rare combination of technical
+              expertise, integrity, and genuine care for their customers. I will
+              undoubtedly be returning to them for all my future automotive
+              needs and will enthusiastically recommend them to family and
+              friends.
             </blockquote>
             <span className="capitalize text-lg text-slate-900">
-              Andy keneth
+              Dr Ben Osagie
             </span>
-            <h3 className="text-sm text-slate-500">CEO Andy Group</h3>
+            <h3 className="text-sm text-slate-500"> DOCTOR</h3>
           </div>
         </div>
       </div>

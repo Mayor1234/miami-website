@@ -22,7 +22,7 @@ const RecentPosts = ({ ...recentPost }) => {
         </div>
         <div className="p-4">
           <div className="h-12 overflow-hidden">
-            <h2 className="cursor-pointer hover:text-[#1890ff]">
+            <h2 className="cursor-pointer text-gray-700 hover:text-[#1890ff]">
               <Link href={`/blog/post/${recentPost.slug.current}`}>
                 {recentPost.title}
               </Link>
