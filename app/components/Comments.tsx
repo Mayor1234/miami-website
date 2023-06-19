@@ -14,7 +14,6 @@ const Comments = ({ ...post }) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { comment } = post;
 
-  console.log(comment);
   const {
     register,
     handleSubmit,
@@ -61,7 +60,7 @@ const Comments = ({ ...post }) => {
             </span>
             <input
               type="name"
-              className="text-base placeholder:text-sm border-b-1 border-gray-400 py-2 px-4 outline-none focus-within:shadow-md focus:border-b-1 focus:border-[#1890ff]"
+              className="text-base  text-gray-600 placeholder:text-sm border-b-1 border-gray-400 py-2 px-4 outline-none focus-within:shadow-md focus:border-b-1 focus:border-[#1890ff]"
               placeholder="Enter name"
               {...register('name', {
                 required: 'Please enter your name',
@@ -83,7 +82,7 @@ const Comments = ({ ...post }) => {
             </span>
             <input
               type="email"
-              className="text-base placeholder:text-sm border-b-1 border-gray-400 py-2 px-4 outline-none focus-within:shadow-md focus:border-b-1 focus:border-[#1890ff]"
+              className="text-base text-gray-600 placeholder:text-sm border-b-1 border-gray-400 py-2 px-4 outline-none focus-within:shadow-md focus:border-b-1 focus:border-[#1890ff]"
               placeholder="Enter email"
               {...register('email', {
                 required: 'Please enter email',
@@ -104,7 +103,7 @@ const Comments = ({ ...post }) => {
               Comment
             </span>
             <textarea
-              className="text-base placeholder:text-sm border-b-1  border-gray-400 py-2 px-4 outline-none focus-within:shadow-md focus:border-b-1 focus:border-[#1890ff]"
+              className="text-base text-gray-600 placeholder:text-sm border-b-1  border-gray-400 py-2 px-4 outline-none focus-within:shadow-md focus:border-b-1 focus:border-[#1890ff]"
               placeholder="Enter Comments"
               rows={4}
               {...register('comment', {

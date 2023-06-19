@@ -13,7 +13,7 @@ const Header = () => {
   };
 
   return (
-    <div className="w-full h-20 font-titleFont sticky top-0 z-30 bg-slate-50">
+    <div className="w-full h-20 font-titleFont sticky top-0 z-30 bg-slate-50 text-gray-800">
       <div className="max-w-full md:max-w-5xl h-full mx-auto flex justify-between items-center md:px-0">
         <Link href="/">
           <div className="flex items-center relative   h-8 w-8 md:h-12 md:w-12 ml-8 md:ml-0">
@@ -100,20 +100,18 @@ const Header = () => {
           </div>
         </div>
 
-        {/* <div className="flex items-center gap-8 text-lg">
+        <div className="flex items-center gap-8 text-lg">
           <div className="flex items-center gap-1">
-            <img
-              className="w-8 h-8 rounded-full"
-              src="https://www.noormohammad.live/static/media/roundedProfile.477a194221d255c8ce26.png"
-              alt="logo"
-            />
+            <Image className="w-8 h-8 rounded-full" src="" alt="logo" />
             <p className="text-sm font-medium">Hello Stranger!</p>
           </div>
 
-          <button className="uppercase text-sm border-[1px] border-primaryColor hover:border-secondaryColor px-4 py-1 font-semibold hover:text-white rounded-md hover:bg-secondaryColor transition-all duration-300 active:bg-yellow-600">
-            Sign In
-          </button>
-        </div> */}
+          <Link href="/signin">
+            <button className="uppercase text-sm border-[1px] border-gray-700 hover:border-[--pry-color] px-4 py-2 font-semibold hover:text-white rounded-md hover:bg-[--pry-color] transition-all duration-300 active:bg-yellow-600">
+              Sign In
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );

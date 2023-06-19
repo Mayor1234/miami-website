@@ -10,33 +10,36 @@ export const PortableTextComponents = {
   types: {
     image: ({ value }: any) => {
       return (
-        <div className="relative text-gray-600 w-full h-96 m-10 mx-auto">
+        <div className="text-gray-600 w-full m-10 mx-auto">
           <Image
             className="object-contain w-full"
             src={urlForImage(value).url()}
             alt="blog post Image"
-            fill
+            width={600}
+            height={200}
+
             // sizes="(max-width: 768px)"
           />
         </div>
       );
     },
-
-    youtube: ({ node }: any) => {
-      const { url } = node;
-      // const url = 'https://www.youtube.com/watch?v=sENgsB4AdZw';
+    youtube: (node: any) => {
+      console.log(node.value.url);
+      const url = node.value.url;
       const id = getYouTubeId(url) as string;
 
+      console.log(id);
+
+      console.log(url);
+
       return (
-        <LiteYouTubeEmbed
-          id={id}
-          title="Youtube video"
-          aspectHeight={9}
-          aspectWidth={16}
-        />
+        <div className="py-12">
+          <LiteYouTubeEmbed id={id} title="Youtube video" />
+        </div>
       );
     },
   },
+
   list: {
     bullet: ({ children }: any) => (
       <ul

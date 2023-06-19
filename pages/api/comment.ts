@@ -27,7 +27,6 @@ export default async function createComment(
       comment,
     });
   } catch (error) {
-    console.log(error);
     return res
       .status(500)
       .json({ message: `couldn't submit your comment`, error });

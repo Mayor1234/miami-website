@@ -12,13 +12,15 @@ const RecentPosts = ({ ...recentPost }) => {
     <div>
       <div className="border-1 border-gray-300">
         <div className="h-full">
-          <Image
-            src={urlForImage(recentPost.mainImage).url()}
-            alt="post"
-            width={250}
-            height={150}
-            className="object-cover w-full aspect-square overflow-hidden"
-          />
+          <Link href={`/blog/post/${recentPost.slug.current}`}>
+            <Image
+              src={urlForImage(recentPost.mainImage).url()}
+              alt="post"
+              width={250}
+              height={150}
+              className="object-cover w-full aspect-square overflow-hidden"
+            />
+          </Link>
         </div>
         <div className="p-4">
           <div className="h-12 overflow-hidden">

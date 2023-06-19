@@ -1,3 +1,5 @@
+'use client';
+
 import React, { Suspense } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -8,13 +10,15 @@ import { EllipsisVerticalIcon } from '@heroicons/react/24/outline';
 import { PortableText } from '@portabletext/react';
 import { PortableTextComponents } from '@/app/components/PortableTextComponents';
 
+import getYouTubeId from 'get-youtube-id';
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
+
 import Comments from '@/app/components/Comments';
 import RecentPosts from '@/app/components/RecentPosts';
 
 import Loading from '../../loading';
 import { Post } from '@/typings';
-
-// import { serializers } from '@/app/components/YoutubePreview';
 
 type Props = {
   params: {
@@ -87,10 +91,10 @@ const page = async ({ params: { slug } }: Props) => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 text-gray-700">
                 <p className="text-sm text-gray-600">Share</p>
 
-                <span>
+                <span className="text-gray-700">
                   <EllipsisVerticalIcon className="h-6 hover:text-[#1890ff]" />
                 </span>
               </div>
@@ -123,12 +127,12 @@ const page = async ({ params: { slug } }: Props) => {
               />
               <hr className="border-1 border-gray-300 mt-10" />
             </section>
-            <section className="my-8">
-              <div className="flex justify-between pb-4">
-                <h2 className="text-2xl font-medium leading-tight">
+            <section className="my-12">
+              <div className="flex justify-between text-gray-700 pb-4">
+                <h2 className="text-2xl font-medium leading-tight text-gray-700">
                   Recent Posts
                 </h2>
-                <span>
+                <span className="text-gray-700">
                   <Link href="/blog">See All</Link>
                 </span>
               </div>
